@@ -82,17 +82,18 @@ main{
     width: calc(100%/4);
     text-align: center;
     cursor: pointer;
-    border-style: none;
     background-color: inherit;
     transition: 250ms;
-    border-image: none;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-bottom: none;
 }
 .main__content__menu__button:hover{
     /*box-shadow: 0px -1px 1px 0px #0000006b;*/
-    background-color: rgba(218, 218, 218, 0.49);
+    background-color: rgba(218, 218, 218, 0.22);
 }
 .main__content__menu__button:active{
-    background-color: rgba(242, 242, 242, 0.66);
+    background-color: rgba(156, 156, 156, 0.66);
 }
 .main__content__menu__button-img1{
     width: 100%;
@@ -132,15 +133,29 @@ main{
     min-height: 730px;
     padding-top: 60px;
     border: 1px solid #80808085;
-    opacity: 1;
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    transition: 200ms;
+}
+.main__content__info-wrrp{
+    position: relative;
+    min-height: 792px;
 }
 .active{
-    opacity: 0;
+    opacity: 1;
+}
+.active_butm{
+    border: 1px solid #80808085;
+    box-shadow: 0 1px 0 0 #ffffff;
+    border-bottom: none;
+    z-index: 1;
 }
 .main__content__info-img{
     width: 100%;
     max-height: 420px;
     display: flex;
+    overflow: hidden;
 }
 .main__content__info-img img{
     margin: auto;
@@ -325,4 +340,34 @@ main{
 footer{
     min-height: 240px;
 }
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 85px;
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: rgba(192, 192, 192, 0.79);
+    border-radius: 8px;
+}
 
+#go-top:hover {
+    background: -webkit-linear-gradient(30deg, #b9b9b9, #636363);
+    background: -o-linear-gradient(30deg, #b9b9b9, #636363);
+    background: linear-gradient(60deg, #b9b9b9, #636363);
+}
+#go-top:active{
+    background: -webkit-linear-gradient(30deg, #b9b9b9, #ffffff);
+    background: -o-linear-gradient(30deg, #b9b9b9, #ffffff);
+    background: linear-gradient(60deg, #b9b9b9, #ffffff);
+}
+#go-top:before{
+    content: '\f106';
+    font-family: FontAwesome;
+    font-size: 57px;
+    position: relative;
+    top: -6px;
+    right: -6px;
+    color: #ffffff;
+}
