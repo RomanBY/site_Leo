@@ -140,11 +140,12 @@ main{
 }
 .main__content__info-wrrp{
     position: relative;
-    min-height: 792px;
+    min-height: 700px;
     max-width: 100%;
 }
 .active{
     opacity: 1;
+    position: relative;
 }
 .active_butm{
     border: 1px solid #80808085;
@@ -518,9 +519,9 @@ footer{
         margin: 30px;
         height: auto;
     }
-    .main__content__info-wrrp {
+   /* .main__content__info-wrrp {
         min-height: 865px;
-    }
+    }*/
     .form_log {
         margin: 10px auto;
     }
@@ -546,9 +547,9 @@ footer{
         margin-left: 18px;
         width: 96%;
     }
-    .main__content__info-wrrp {
+    /*.main__content__info-wrrp {
         min-height: 885px;
-    }
+    }*/
     .footer__content__logo {
         max-width: 119px;
     }
