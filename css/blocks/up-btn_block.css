@@ -1,0 +1,30 @@
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 85px;
+    cursor: pointer;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: rgba(192, 192, 192, 0.79);
+    border-radius: 8px;
+}
+#go-top:hover {
+    background: -webkit-linear-gradient(30deg, #b9b9b9, #636363);
+    background: -o-linear-gradient(30deg, #b9b9b9, #636363);
+    background: linear-gradient(60deg, #b9b9b9, #636363);
+}
+#go-top:active{
+    background: -webkit-linear-gradient(30deg, #b9b9b9, #ffffff);
+    background: -o-linear-gradient(30deg, #b9b9b9, #ffffff);
+    background: linear-gradient(60deg, #b9b9b9, #ffffff);
+}
+#go-top:before{
+    content: '\f106';
+    font-family: FontAwesome;
+    font-size: 57px;
+    position: relative;
+    top: -6px;
+    right: -6px;
+    color: #ffffff;
+}

@@ -132,11 +132,11 @@
 }
 
 .slider__control_prev::before {
-    background-image: url("../img/header/botm_left.png");
+    background-image: url("../../img/header/botm_left.png");
 }
 
 .slider__control_next::before {
-    background-image: url("../img/header/botm_right.png");
+    background-image: url("../../img/header/botm_right.png");
 }
 
 

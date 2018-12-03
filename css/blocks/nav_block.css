@@ -1,0 +1,41 @@
+.header__nav{
+    min-height: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo img{
+    width: 220px;
+    height: 64px;
+    margin: 50px 30px 26px 35px;
+}
+nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+    margin-right: 35px;
+    overflow: hidden;
+}
+nav a{
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.92);
+    padding: 26px 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+nav span{
+    display: inline-block;
+    position: relative;
+    transition: transform 500ms;
+}
+nav a span:after{
+    content: attr(data-hover);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    transform: translate3d(0,0,0);
+}
+nav a:hover span,
+nav a:focus span{
+    transform: translateY(30px);
+}
